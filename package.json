@@ -1,14 +1,19 @@
 {
   "name": "cli-imagemin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "compress jpg and png",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "repository": "typ0n/cli-imagemin",
+  "keywords": [
+    "cli",
+    "image",
+    "minify"
+  ],
+  "author": "typ0n",
   "license": "MIT",
   "dependencies": {
     "commander": "^9.3.0",
