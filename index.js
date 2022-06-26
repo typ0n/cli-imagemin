@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { Command } from 'commander'
 import imagemin from 'imagemin'
 import imageminMozjpeg from 'imagemin-mozjpeg'

@@ -7,6 +7,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": {
+    "cli-imagemin": "index.js"
+  },
   "repository": "typ0n/cli-imagemin",
   "keywords": [
     "cli",
