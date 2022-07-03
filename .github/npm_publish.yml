@@ -1,0 +1,40 @@
+name: npm_publish
+
+env:
+    CI: true
+
+on:
+    push:
+        branches:
+            - main
+        tags:
+            - '!*'
+
+jobs:
+    publish:
+        name: Setup
+        runs-on: ubuntu-latest
+        steps:
+            - name: checkout # step name
+              uses: actions/checkout@v2 # action name
+
+            - name: setup node
+              uses: actions/setup-node@v3
+              with:
+                  node-version: 14.x
+
+            - name: npm installを行う
+              run: npm install
+
+            - name: npm上のバージョンを確認する
+              run: npx can-npm-publish --verbose # publish可能なversionかチェック
+              env:
+                  NODE_AUTH_TOKEN: ${{ secrets.NPM_GENERATE_TOKEN }}
+
+            - name: build
+              run: npm build
+
+            - name: publish
+              run: npm publish --access=public
+              env:
+                  NODE_AUTH_TOKEN: ${{ secrets.NPM_GENERATE_TOKEN }}
