@@ -1,18 +1,12 @@
 name: npm_publish
 
-env:
-    CI: true
-
 on:
     push:
-        branches:
-            - main
         tags:
-            - '!*'
+            - 'v*.*.*'
 
 jobs:
     publish:
-        name: Setup
         runs-on: ubuntu-latest
         steps:
             - name: checkout # step name
@@ -23,10 +17,10 @@ jobs:
               with:
                   node-version: 14.x
 
-            - name: npm installを行う
+            - name: npm install
               run: npm install
 
-            - name: npm上のバージョンを確認する
+            - name: check npm versions
               run: npx can-npm-publish --verbose # publish可能なversionかチェック
               env:
                   NODE_AUTH_TOKEN: ${{ secrets.NPM_GENERATE_TOKEN }}
