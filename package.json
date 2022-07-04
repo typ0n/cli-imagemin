@@ -11,7 +11,10 @@
     "bin": {
         "cli-imagemin": "dist/index.js"
     },
-    "repository": "typ0n/cli-imagemin",
+    "repository": {
+        "type": "git",
+        "url": "typ0n/cli-imagemin"
+    },
     "keywords": [
         "cli",
         "image",
