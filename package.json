@@ -13,7 +13,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "typ0n/cli-imagemin"
+        "url": "https://github.com/typ0n/cli-imagemin.git"
     },
     "keywords": [
         "cli",
