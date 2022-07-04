@@ -1,5 +1,5 @@
 {
-    "name": "cli-imagemin",
+    "name": "@typ0n/cli-imagemin",
     "version": "0.0.1",
     "description": "compress jpg and png",
     "main": "dist/index.js",
