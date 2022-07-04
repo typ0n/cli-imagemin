@@ -9,7 +9,7 @@ I would be happy to help as many people as possible to work more efficiently.
 ### For global installation
 
 ```shell
-$ npm i -g cli-imagemin
+$ npm i -g @typ0n/cli-imagemin
 
 $ cli-imagemin sample.jpg
 
@@ -19,9 +19,9 @@ $ cli-imagemin sample01.jpg sample02.jpg # For multiple
 ### For npx
 
 ```shell
-$ npx cli-imagemin sample.jpg
+$ npx @typ0n/cli-imagemin sample.jpg
 
-$ npx cli-imagemin sample01.jpg sample02.jpg # For multiple
+$ npx @typ0n/cli-imagemin sample01.jpg sample02.jpg # For multiple
 ```
 
 ## Params

@@ -1,6 +1,6 @@
 {
     "name": "@typ0n/cli-imagemin",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "compress jpg and png",
     "main": "dist/index.js",
     "type": "module",
