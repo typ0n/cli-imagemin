@@ -1,6 +1,6 @@
 {
     "name": "cli-imagemin",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "compress jpg and png",
     "main": "index.js",
     "type": "module",
