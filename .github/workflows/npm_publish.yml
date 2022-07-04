@@ -17,6 +17,12 @@ jobs:
               with:
                   node-version: 14.x
 
+            - name: cache npm packages
+              uses: actions/cache@v2
+              with:
+                  path: node_modules
+                  key: npm-packages-v1-${{ hashFiles('package-lock.json') }}
+
             - name: npm install
               run: npm install
 
